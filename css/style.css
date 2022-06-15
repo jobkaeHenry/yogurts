@@ -433,3 +433,9 @@ footer {
     min-width:320px
   }
 }
+
+@media screen and (max-width:768px){
+  .visit_instagram{
+    display: none;
+  }
+}
