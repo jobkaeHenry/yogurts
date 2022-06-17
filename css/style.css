@@ -801,3 +801,43 @@ margin-bottom: 150px;
     justify-content: center;
   }
 }
+
+@media screen and (max-width:450px) {
+td:first-child{
+  display: none;
+}
+.footer_wrap{
+  text-align: center;
+}
+.footer_iconWrap{
+  display: none;
+}
+.notice_right_bot,.notice_right_top{
+  padding: 50px 20px;
+}
+#slider_banner, .right_wrap {
+  display: none;
+}
+
+.visit_instagram_mobile {
+  width: 100%;
+  height: 70px;
+  line-height: 20px;
+  border: 1px solid #ddd;
+}
+
+.visit_instagram_mobile a {
+  margin: 0 auto
+}
+
+.visit_instagram_mobile img {
+  float: left;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.visit_instagram_mobile p {
+float: right;
+}
+}
