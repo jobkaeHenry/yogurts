@@ -242,6 +242,30 @@ main {
 }
 
 
+.visit_instagram_mobile {
+  display: none;
+  width: 100%;
+  height: 70px;
+  line-height: 20px;
+  border: 1px solid #ddd;
+}
+
+.visit_instagram_mobile a {
+  margin: 0 auto
+}
+
+.visit_instagram_mobile img {
+  float: left;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.visit_instagram_mobile p {
+float: right;
+}
+
+
 /* 2번째 배너 */
 .second_banner {
   height: 500px;
@@ -819,25 +843,8 @@ td:first-child{
   display: none;
 }
 
+
 .visit_instagram_mobile {
-  width: 100%;
-  height: 70px;
-  line-height: 20px;
-  border: 1px solid #ddd;
-}
-
-.visit_instagram_mobile a {
-  margin: 0 auto
-}
-
-.visit_instagram_mobile img {
-  float: left;
-  width: 20px;
-  height: 20px;
-  margin-right: 10px;
-}
-
-.visit_instagram_mobile p {
-float: right;
+display: flex;
 }
 }
