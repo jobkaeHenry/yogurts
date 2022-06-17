@@ -62,6 +62,10 @@ a {
   margin-bottom: 30px;
 }
 
+.fw600{
+  font-weight: 600;
+}
+
 .flex {
   display: flex;
 }
@@ -139,6 +143,7 @@ nav {
   border-bottom: 1px solid #ddd;
   position: fixed;
   top: 0;
+  z-index: 999;
 }
 
 nav li {
@@ -420,6 +425,17 @@ main {
   }
 }
 
+@keyframes floating_2 {
+
+  0% {
+    margin-bottom: 10px;
+  }
+
+  100% {
+    margin-bottom: -10px;
+  }
+}
+
 /* 푸터 */
 
 footer {
@@ -474,6 +490,7 @@ footer {
   width: 100%;
   min-height: 80vh;
   padding: 50px 0;
+  margin-top: 100px;
 }
 
 .value_wrap{
@@ -494,6 +511,7 @@ footer {
 .third_main_img{
   width: 100%;
   min-height: 80vh;
+  margin-top: 100px;
   padding: 50px 0;
 }
 
@@ -504,12 +522,37 @@ max-width: 590px;
 min-height: 50vh;
 }
 
+.logo_system::before{
+  content: "";
+  margin-bottom: 30px;
+  width: 100px;
+  border-bottom:4px solid #ff044b;
+}
+
 .brand_logo{
   width:100%;
   max-width: 320px;
-  margin: 0 auto;
-  margin-top: 50px;
+  margin: 50px auto;
 }
+.character{
+  width: 100%;
+  padding: 50px;
+  overflow: hidden;
+  text-align: center;
+}
+.character_wrap{
+  width: 100%;
+  max-width: 800px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.character_wrap>img{
+  max-height: 250px;
+  padding:30px;
+  margin: 10px 0;
+}
+
 
 .color_system{
   padding: 30px;
@@ -551,6 +594,66 @@ min-height: 50vh;
 }
 .sub_4{
   background-color: #edcad6;
+}
+
+
+
+/* 공지페이지 */
+
+.notice_banner{
+  width: 100%;
+  height: 300px;
+  background-image: url(../img/./interior.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+table {
+  width: 100%;
+  text-align: center;
+  margin: 50px 0;
+}
+
+td:first-child {
+  width: 13%;
+
+}
+
+td {
+  padding: 15px 30px;
+  border-bottom: 1px solid #ebebeb;
+  font-weight: 300;
+}
+
+td:nth-child(2) {
+  text-align: left;
+  cursor: pointer;
+}
+
+td:nth-child(2):hover {
+  color: #ff044b;
+  transition-duration: 300ms;
+}
+
+td:last-child {
+  width: 13%;
+
+}
+
+tr:first-child>td {
+  border-top: 1px solid #c4c4c4;
+  border-bottom: 1px solid #c4c4c4;
+  font-size: 19px;
+  text-align: center;
+}
+
+tr:first-child td {
+  cursor: default;
+  font-weight: 500;
+}
+
+tr:first-child td:hover {
+  color: #242424;
 }
 
 
@@ -638,7 +741,7 @@ min-height: 50vh;
     position: fixed;
     text-align: center;
     background-color: #fff;
-
+    z-index: 999;
   }
 
   .hamburger>img {
@@ -684,5 +787,11 @@ margin-bottom: 150px;
 @media screen and (max-width:768px) {
   .visit_instagram {
     display: none;
+  }
+}
+
+@media screen and (max-width:722px) {
+  .character_wrap{
+    justify-content: center;
   }
 }
