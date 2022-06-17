@@ -842,7 +842,9 @@ td:first-child{
 #slider_banner, .right_wrap {
   display: none;
 }
-
+.menu_detail{
+  padding-right:13%;
+}
 
 .visit_instagram_mobile {
 display: flex;
