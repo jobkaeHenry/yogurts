@@ -782,6 +782,12 @@ margin-bottom: 150px;
   .nav_social {
     display: none;
   }
+  #slider_banner{
+    height: 300px;
+  }
+  .text_wrap{
+    margin-left: 20%;
+  }
 }
 
 @media screen and (max-width:768px) {
